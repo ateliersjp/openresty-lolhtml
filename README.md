@@ -1,5 +1,5 @@
 # OpenResty meets LOL HTML
-The Docker image is based on [`openresty/openresty:bionic`](https://hub.docker.com/r/openresty/openresty), the only version of Ubuntu that supports `cssparser`. The [Lua binding](https://github.com/jdesgats/lua-lolhtml) for [`lol-html`](https://github.com/cloudflare/lol-html) and its dependencies are pre-installed and ready to rewrite HTML contents.
+The Docker image is based on [`openresty/openresty:bionic`](https://hub.docker.com/r/openresty/openresty) because `bionic` was the last version of Ubuntu to support `cssparser`. The [Lua binding](https://github.com/jdesgats/lua-lolhtml) for [`lol-html`](https://github.com/cloudflare/lol-html) and its dependencies are pre-installed and ready to rewrite HTML contents.
 
 ## Usage
 When you `pull` or `run` the Docker image, just use `ateliersjp/openresty-lolhtml:bionic` instead of `openresty/openresty:bionic` and then ready to use `lua-lolhtml`.
